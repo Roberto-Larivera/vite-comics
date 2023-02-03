@@ -23,7 +23,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use "./style/main.scss";
+@import "./style/main.scss";
 
 
 // @use "./style/main.scss" as*;

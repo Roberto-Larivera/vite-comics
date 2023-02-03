@@ -92,6 +92,7 @@ header {
                 text-decoration: none;
                 text-transform: uppercase;
                 font-weight: bold;
+                color: $txt_link;
             }
         }
     }

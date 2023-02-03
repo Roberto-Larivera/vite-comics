@@ -220,7 +220,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
 footer {
     .footer_top {
         width: 100%;
@@ -255,7 +254,7 @@ footer {
                     h3 {
                         color: $txt_light-primary;
                         margin-top: 20px;
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                         text-transform: uppercase;
                     }
 
@@ -271,7 +270,7 @@ footer {
 
                             a {
                                 text-decoration: none;
-                                color: #797979;
+                                color: $txt_link;
                                 text-transform: capitalize;
                             }
                         }
