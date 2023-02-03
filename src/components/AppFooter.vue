@@ -220,6 +220,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
 footer {
     .footer_top {
         width: 100%;
@@ -252,7 +253,7 @@ footer {
                     margin-right: 20px;
 
                     h3 {
-                        color: white;
+                        color: $txt_light-primary;
                         margin-top: 20px;
                         margin-bottom: 10px;
                         text-transform: uppercase;
@@ -281,7 +282,7 @@ footer {
     }
 
     .footer_bottom {
-        height: 150px;
+        height: $height_foot-bottom;
         width: 100%;
         background-color: #303030;
 
@@ -292,23 +293,47 @@ footer {
             justify-content: space-between;
             align-items: center;
 
-            ul {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                height: 100%;
-                width: 100%;
-
-                li {
-                    list-style-type: none;
+            .bottom_content-start {
+                button {
                     padding: 10px;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    border: 2px solid $color_primary;
+                    color: $bttn_light-primary;
 
-                    a {
-                        text-decoration: none;
-                        color: white;
+                    &:hover {
+                        background-color: $color_primary;
+                    }
+                }
+            }
+
+            .bottom_content-end {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+
+                    li {
+                        list-style-type: none;
+                        padding: 10px;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+
+                        span {
+                            text-transform: uppercase;
+                            color: $color_primary;
+                            font-weight: 900;
+
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $txt_light-primary;
+                        }
                     }
                 }
             }

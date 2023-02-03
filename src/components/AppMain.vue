@@ -13,7 +13,7 @@ export default {
                 <div class="content_title">
 
                     <h2>
-                        --> Content goes here &lt;--
+                        --&gt; Content goes here &lt;--
                     </h2>
                 </div>
             </div>
