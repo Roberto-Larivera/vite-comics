@@ -25,27 +25,32 @@ export default {
                     <ul>
                         <li>
                             <a href="#">
-                                digital comics
+                                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                                <span>digital comics</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                dc merchandise
+                                <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                                <span>dc merchandise</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                subscription
+                                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                                <span>subscription</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                comic shop locator
+                                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                                <span>comic shop locator</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                dc power visa
+                                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                                <span>dc power visa</span>
                             </a>
                         </li>
                     </ul>
@@ -56,7 +61,7 @@ export default {
     </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 main {
     height: calc(100% - 150px);
 }
@@ -101,10 +106,26 @@ main {
                 height: 100%;
                 display: flex;
                 align-items: center;
-
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
                 a {
+                   
                     text-decoration: none;
                     color: white;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    img{
+                        vertical-align: middle;
+                        height: 50px;
+                        width: 50px;
+                        object-fit: contain;
+                        margin-right: 10px;
+                    }
+                    span{
+                        vertical-align: middle;
+                        font-size: .8rem;
+                    }
                 }
             }
         }

@@ -69,12 +69,9 @@ header {
     align-items: center;
 }
 
-.header_logo{
-    height: 100%;
-    img{
-        height: 100%;
-    }
-}
+// .header_logo{
+//     height: 100%;
+// }
 .header_links {
     height: 100%;
 
@@ -93,7 +90,8 @@ header {
 
             a {
                 text-decoration: none;
-
+                text-transform: uppercase;
+                font-weight: bold;
             }
         }
     }

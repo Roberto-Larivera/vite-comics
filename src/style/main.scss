@@ -1,5 +1,12 @@
 @import "./partials/reset.scss";
 
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/font/Lato/Lato-Regular.ttf');
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
 .container {
     max-width: 1100px;
     height: 100%;
