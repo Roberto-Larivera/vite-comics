@@ -58,7 +58,7 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 150px;
-    //padding: 15px;
+    padding: 20px;
 }
 
 .header_container {
@@ -67,32 +67,37 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-// .header_logo{
-//     height: 100%;
-// }
-.header_links {
-    height: 100%;
+    .header_logo {
+        height: 100%;
+        img{
+            height: 100%
+        };
 
-    ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    }
+
+    .header_links {
         height: 100%;
 
-        li {
-            list-style-type: none;
-            padding: 10px;
-            height: 100%;
+        ul {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+            height: 100%;
 
-            a {
-                text-decoration: none;
-                text-transform: uppercase;
-                font-weight: bold;
-                color: $txt_link;
+            li {
+                list-style-type: none;
+                padding: 10px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $txt_link;
+                }
             }
         }
     }

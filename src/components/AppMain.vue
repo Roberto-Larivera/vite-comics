@@ -1,10 +1,12 @@
 <script>
 import AppMainJumbotron from "./AppMainJumbotron.vue"
+import AppMainCurrentSeries from "./AppMainCurrentSeries.vue"
 
 export default {
     name: 'AppMain',
     components: {
         AppMainJumbotron,
+        AppMainCurrentSeries,
     },
 }
 </script>
@@ -12,7 +14,9 @@ export default {
 <template>
     <main>
         <AppMainJumbotron/>
-        <div class="main_content">
+        <AppMainCurrentSeries/>
+        
+        <!-- <div class="main_content">
             <div class="container">
                 <div class="content_title">
 
@@ -21,7 +25,7 @@ export default {
                     </h2>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="main_content-links">
             <div class="container">
                 <div class="content_links">
