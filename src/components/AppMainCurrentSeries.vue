@@ -1,8 +1,9 @@
 <script>
+import AppMainCurrentCard from './AppMainCurrentCard.vue';
 export default {
     name: 'AppMainCurrentSeries',
     components: {
-
+        AppMainCurrentCard,
     },
     data() {
         return {
@@ -89,12 +90,7 @@ export default {
     <div class="main_current__series">
         <div class="container">
             <div class="series_cards">
-                <div class="card" v-for="element in seriesData" >
-                    <div class="card_image">
-                        <img :src="element.thumb" alt="">
-                    </div>
-                    <h3>{{ element.series }}</h3>
-                </div>
+                <AppMainCurrentCard :src="element.thumb" :title="element.series"  v-for="element in seriesData"/>
             </div>
             <button>load more</button>
         </div>
@@ -105,27 +101,19 @@ export default {
 .main_current__series {
     min-height: 300px;
     background-color: $bg_main-current--series;
-
+    padding: 50px 0 50px 0;
+    text-align: center;
     .series_cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 100%;
+        margin-bottom: 20px;
         
-        .card {
-            width: calc((100% / 6) );
-            padding: 5px;
-            .card_image{
-                width: 100%;
-                img{
-                    width: 100%;
-                    object-fit: cover;
-                    object-position: center;
-                    aspect-ratio: 1;
-
-                }
-            }
-        }
+       
+    }
+    button{
+        @include button ($color_primary,$bttn_light-primary,$bg_main-current--series,$color_primary,10px 50px 10px 50px,uppercase,700,$color_primary)
     }
 }
 </style>

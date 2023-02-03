@@ -1,21 +1,49 @@
 <script>
 export default {
-    name: 'AppMainJumbotron',
+    name: 'AppMainCurrentCard',
     components: {
 
-    }
+    },
+    props: {
+        src: String,
+        title: String,
+        src: String,
+
+    },
 }
 </script>
 
 <template>
-    <div class="main_jumbotron">
+    <div class="card">
+        <div class="card_image">
+            <img :src="src" :alt="title">
+        </div>
+        <h3>{{ title }}</h3>
     </div>
 </template>
 
 <style lang="scss" scoped>
-.main_jumbotron {
-    width: 100%;
-    height: 500px;
-    background-image: url('../assets/img/jumbotron.jpg');
+.card {
+    width: calc((100% / 6));
+    padding: 5px;
+    margin-bottom: 20px;
+
+    .card_image {
+        width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            aspect-ratio: 1;
+
+        }
+    }
+
+    h3 {
+        color: $txt_light-primary;
+        font-weight: 700;
+        margin-top: 15px;
+    }
 }
 </style>

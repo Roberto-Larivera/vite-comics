@@ -1,0 +1,16 @@
+@mixin button ($bord-color,$color,$bg-hover,$bg-active,$pad: 10px,$text: uppercase,$text-weight: 400,$bg: transparent,$bord-px: 2px) {
+    padding: $pad;
+    text-transform: $text;
+    background-color: $bg;
+    border: $bord-px solid $bord-color;
+    color: $color;
+    font-weight: $text-weight;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-hover;
+    }
+    &:active {
+        box-shadow: 0px 0px 30px 0px $bg-active;
+    }
+}

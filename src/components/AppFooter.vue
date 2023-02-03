@@ -293,16 +293,19 @@ footer {
             align-items: center;
 
             .bottom_content-start {
-                button {
-                    padding: 10px;
-                    text-transform: uppercase;
-                    background-color: transparent;
-                    border: 2px solid $color_primary;
-                    color: $bttn_light-primary;
+                // button {
+                //     padding: 10px;
+                //     text-transform: uppercase;
+                //     background-color: transparent;
+                //     border: 2px solid $color_primary;
+                //     color: $bttn_light-primary;
 
-                    &:hover {
-                        background-color: $color_primary;
-                    }
+                //     &:hover {
+                //         background-color: $color_primary;
+                //     }
+                // }
+                button{
+                    @include button ($color_primary,$bttn_light-primary,$color_primary,$color_primary)
                 }
             }
 
