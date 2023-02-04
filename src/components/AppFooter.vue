@@ -1,8 +1,11 @@
 <script>
+import AppFooterButtonLinks from './AppFooterButtonLinks.vue';
+import AppFooterListLinks from './AppFooterListLinks.vue';
 export default {
     name: 'AppFooter',
     components: {
-
+        AppFooterButtonLinks,
+        AppFooterListLinks,
     }
 }
 </script>
@@ -11,203 +14,13 @@ export default {
     <footer>
         <div class="footer_top">
             <div class="container">
-                <div class="content_links">
-
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-                                <span>digital comics</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                                <span>dc merchandise</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
-                                <span>subscription</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
-                                <span>comic shop locator</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
-                                <span>dc power visa</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <AppFooterButtonLinks/>
+                
             </div>
         </div>
         <div class="footer_center">
             <div class="container">
-                <div class="center_content">
-                    <div class="center_content-links">
-                        <div class="content_links-left">
-                            <h3>
-                                dc comics
-                            </h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Characters
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Comics
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Movies
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        TV
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Games
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Videos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        News
-                                    </a>
-                                </li>
-                            </ul>
-                            <h3>
-                                shop
-                            </h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Shop DC
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Shop DC Collectibles
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="content_links-center">
-                            <h3>
-                                dc
-                            </h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        Terms Of Use
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Privacy policy (New)
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Ad Choices
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Advertising
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Jobs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Subscriptions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Talent Workshops
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        CPSC Certificates
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Ratings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Shop Help
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="content_links-right">
-                            <h3>
-                                sites
-                            </h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        DC
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        MAD Magazine
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        DC Kids
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        DC Universe
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        DC Power Visa
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="center_content-logo">
-                        </div>
-
-                    </div>
-                </div>
+                <AppFooterListLinks/>
             </div>
         </div>
         <div class="footer_bottom">
@@ -223,27 +36,27 @@ export default {
                                 <span>follow us</span>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#nogo">
                                     <img src="../assets/img/footer-facebook.png" alt="icon-facebook">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#nogo">
                                     <img src="../assets/img/footer-twitter.png" alt="icon-twitter">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#nogo">
                                     <img src="../assets/img/footer-youtube.png" alt="icon-youtube">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#nogo">
                                     <img src="../assets/img/footer-pinterest.png" alt="icon-pinterest">
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#nogo">
                                     <img src="../assets/img/footer-periscope.png" alt="icon-periscope">
                                 </a>
                             </li>
@@ -265,48 +78,7 @@ footer {
     height: 150px;
     width: 100%;
 
-    .content_links {
-        height: 100%;
-        width: 100%;
-
-
-        ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-
-            li {
-                list-style-type: none;
-                padding: 10px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                &:hover{
-                    background-color: rgba(255, 255, 255, 0.1);
-                }
-                a {
-                   
-                    text-decoration: none;
-                    color: white;
-                    text-transform: uppercase;
-                    font-weight: 300;
-                    img{
-                        vertical-align: middle;
-                        height: 50px;
-                        width: 50px;
-                        object-fit: contain;
-                        margin-right: 10px;
-                    }
-                    span{
-                        vertical-align: middle;
-                        font-size: .8rem;
-                    }
-                }
-            }
-        }
-    }
+    
 }
     .footer_center {
         width: 100%;
@@ -323,48 +95,7 @@ footer {
 
         }
 
-        .center_content {
-            height: 100%;
-            width: 100%;
-
-            .center_content-links {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                height: 100%;
-                display: flex;
-
-                .content_links-left,
-                .content_links-center,
-                .content_links-right {
-                    margin-right: 20px;
-
-                    h3 {
-                        color: $txt_light-primary;
-                        margin-top: 20px;
-                        margin-bottom: 20px;
-                        text-transform: uppercase;
-                    }
-
-                    ul {
-                        width: 100%;
-
-                        li {
-                            list-style-type: none;
-                            height: 100%;
-                            margin-bottom: 5px;
-                            display: flex;
-                            align-items: center;
-
-                            a {
-                                text-decoration: none;
-                                color: $txt_link;
-                                text-transform: capitalize;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
     }
 
     .footer_bottom {
