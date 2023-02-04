@@ -11,8 +11,47 @@ export default {
     <footer>
         <div class="footer_top">
             <div class="container">
-                <div class="top_content">
-                    <div class="top_content-links">
+                <div class="content_links">
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                                <span>digital comics</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                                <span>dc merchandise</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                                <span>subscription</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                                <span>comic shop locator</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                                <span>dc power visa</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_center">
+            <div class="container">
+                <div class="center_content">
+                    <div class="center_content-links">
                         <div class="content_links-left">
                             <h3>
                                 dc comics
@@ -164,7 +203,7 @@ export default {
                                 </li>
                             </ul>
                         </div>
-                        <div class="top_content-logo">
+                        <div class="center_content-logo">
                         </div>
 
                     </div>
@@ -222,6 +261,54 @@ export default {
 <style lang="scss" scoped>
 footer {
     .footer_top {
+    background-color: #0282F9;
+    height: 150px;
+    width: 100%;
+
+    .content_links {
+        height: 100%;
+        width: 100%;
+
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+
+            li {
+                list-style-type: none;
+                padding: 10px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+                a {
+                   
+                    text-decoration: none;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    img{
+                        vertical-align: middle;
+                        height: 50px;
+                        width: 50px;
+                        object-fit: contain;
+                        margin-right: 10px;
+                    }
+                    span{
+                        vertical-align: middle;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+    .footer_center {
         width: 100%;
         background-image: url(../assets/img/footer-bg.jpg);
         background-repeat: no-repeat;
@@ -236,11 +323,11 @@ footer {
 
         }
 
-        .top_content {
+        .center_content {
             height: 100%;
             width: 100%;
 
-            .top_content-links {
+            .center_content-links {
                 padding-top: 20px;
                 padding-bottom: 20px;
                 height: 100%;

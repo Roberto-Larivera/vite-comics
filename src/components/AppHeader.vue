@@ -1,8 +1,9 @@
 <script>
+import AppHeaderLinks from './AppHeaderLinks.vue';
 export default {
     name: 'AppHeader',
     components: {
-
+        AppHeaderLinks,
     }
 }
 </script>
@@ -15,38 +16,7 @@ export default {
                     <img src="../assets/img/dc-logo.png">
                 </div>
                 <div class="header_links">
-                    <ul>
-                        <li>
-                            <a href="#">characters</a>
-                        </li>
-                        <li>
-                            <a href="#">comics</a>
-                        </li>
-                        <li>
-                            <a href="#">movies</a>
-                        </li>
-                        <li>
-                            <a href="#">tv</a>
-                        </li>
-                        <li>
-                            <a href="#">games</a>
-                        </li>
-                        <li>
-                            <a href="#">collectibles</a>
-                        </li>
-                        <li>
-                            <a href="#">videos</a>
-                        </li>
-                        <li>
-                            <a href="#">fans</a>
-                        </li>
-                        <li>
-                            <a href="#">news</a>
-                        </li>
-                        <li>
-                            <a href="#">shop</a>
-                        </li>
-                    </ul>
+                    <AppHeaderLinks/>
                 </div>
             </div>
 
@@ -58,7 +28,6 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 150px;
-    padding: 20px;
 }
 
 .header_container {
@@ -70,36 +39,18 @@ header {
 
     .header_logo {
         height: 100%;
-        img{
+        padding: 20px;
+
+        img {
             height: 100%
-        };
+        }
 
     }
 
     .header_links {
         height: 100%;
 
-        ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
 
-            li {
-                list-style-type: none;
-                padding: 10px;
-                height: 100%;
-                display: flex;
-                align-items: center;
-
-                a {
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: $txt_link;
-                }
-            }
-        }
     }
 }
 </style>
