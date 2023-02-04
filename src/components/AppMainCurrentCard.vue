@@ -44,6 +44,7 @@ export default {
         color: $txt_light-primary;
         font-weight: 700;
         margin-top: 15px;
+        text-transform: capitalize;
     }
 }
 </style>

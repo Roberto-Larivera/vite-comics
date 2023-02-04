@@ -89,6 +89,9 @@ export default {
 <template>
     <div class="main_current__series">
         <div class="container">
+            <div class="title-section">
+                <h2>current series</h2>
+            </div>
             <div class="series_cards">
                 <AppMainCurrentCard :src="element.thumb" :title="element.series"  v-for="element in seriesData"/>
             </div>
@@ -103,6 +106,23 @@ export default {
     background-color: $bg_main-current--series;
     padding: 50px 0 50px 0;
     text-align: center;
+    
+    .container{
+        position: relative;
+        .title-section{
+            display: inline-block;
+            background-color: $color_primary;
+            padding: 15px;
+            position: absolute;
+            top: -80px;
+            left: 0;
+            h2{
+                text-transform: uppercase;
+                color: $txt_light-primary;
+                font-weight: 900;
+            }
+        }
+    }
     .series_cards {
         display: flex;
         flex-wrap: wrap;

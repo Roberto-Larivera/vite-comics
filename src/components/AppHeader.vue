@@ -28,6 +28,10 @@ export default {
 <style lang="scss" scoped>
 header {
     height: 150px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 
 .header_container {

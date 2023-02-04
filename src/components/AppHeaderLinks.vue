@@ -85,7 +85,7 @@ export default {
     <div>
         <ul>
             <li v-for="item,index in links" :class="(item.status==true)? 'active':''" >
-                <a :href="item.link" @click="menuMesssageOpenList(item, index)">{{ item.txt }}</a>
+                <a :href="item.link" @click="menuMesssageOpenList(item, index)" >{{ item.txt }}</a>  <!--target="_blank"-->
             </li>
         </ul>
     </div>
