@@ -2,10 +2,17 @@
 // @import "./partials/variables";
 // @import "./partials/mixins";
 
-@font-face {
-    font-family: 'Lato';
-    src: url('../assets/font/Lato/Lato-Regular.ttf');
-}
+// IMPORTAZIONE TRAMITE FILE -- errore in console , ma funziona
+// @font-face {
+//     font-family: 'Lato';
+//     src: url('../assets/font/Lato/Lato-Regular.ttf');
+// }
+// body{
+//     font-family: 'Lato', sans-serif;
+// }
+
+// IMPORTAZIONE TRAMITE URL
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 body{
     font-family: 'Lato', sans-serif;
 }

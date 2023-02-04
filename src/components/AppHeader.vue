@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    height: 150px;
+    height: $height_header;
     position: sticky;
     top: 0;
     background-color: white;

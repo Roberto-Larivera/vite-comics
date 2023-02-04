@@ -18,7 +18,7 @@ export default {
                 
             </div>
         </div>
-        <div class="footer_center">
+        <div class="footer_center multi-bg">
             <div class="container">
                 <AppFooterListLinks/>
             </div>
@@ -82,11 +82,20 @@ footer {
 }
     .footer_center {
         width: 100%;
-        background-image: url(../assets/img/footer-bg.jpg);
-        background-repeat: no-repeat;
+        background-image:url(../assets/img/footer-bg.jpg);
+        background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
 
+        // UTILIZZO SFONDO DOPPIO
+        /*
+        // &.multi-bg{
+        //     background-image: url('../assets/img/dc-logo-bg.png'),url('../assets/img/footer-bg.jpg');
+        //     background-repeat: no-repeat, no-repeat;
+        //     background-size: none, cover;
+        //     background-position: right, center;
+        // }
+        */
         .container {
             background-image: url(../assets/img/dc-logo-bg.png);
             background-repeat: no-repeat;
