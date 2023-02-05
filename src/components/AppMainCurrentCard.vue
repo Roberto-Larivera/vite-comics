@@ -13,19 +13,24 @@ export default {
 </script>
 
 <template>
-    <div class="card">
-        <div class="card_image">
-            <img :src="src" :alt="title">
+    
+        <div class="card">
+            <div class="card_image">
+                <img :src="src" :alt="title">
+            </div>
+            <h3>{{ title }}</h3>
         </div>
-        <h3>{{ title }}</h3>
-    </div>
+    
 </template>
 
 <style lang="scss" scoped>
+
+
 .card {
     width: calc((100% / 6));
     padding: 5px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     .card_image {
         width: 100%;

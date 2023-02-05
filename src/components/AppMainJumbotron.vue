@@ -17,5 +17,8 @@ export default {
     width: 100%;
     height: 500px;
     background-image: url('../assets/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 </style>

@@ -88,7 +88,10 @@ export default {
         }
     },
     methods: {
-        open
+        openInfo(index){
+            this.currentBook = index;
+            this.visibleInfo = true;
+        }
     },
 }
 </script>
@@ -101,13 +104,13 @@ export default {
                     <h2>current series</h2>
                 </div>
                 <div class="series_cards">
-                    <AppMainCurrentCard :src="element.thumb" :title="element.series" v-for="element in seriesData" @click="" />
+                    <AppMainCurrentCard :src="element.thumb" :title="element.series" v-for="(element, index) in seriesData" @click="openInfo(index)" />
                 </div>
                 <button>load more</button>
             </div>
         </div>
         <div v-if="visibleInfo == true">
-            <div class="conta©iner">
+            <div class="container">
                 <AppMainCardInfo :src="seriesData[currentBook].thumb" :title="seriesData[currentBook].series"
                     :price="seriesData[currentBook].price" :type="seriesData[currentBook].type" />
             </div>
