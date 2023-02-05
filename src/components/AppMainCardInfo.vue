@@ -11,6 +11,16 @@ export default {
         type: String,
 
     },
+    data(){
+        return{
+
+        }
+    },
+    methods: {
+        reloadPage() {
+      location.reload()
+    }
+    },
 }
 </script>
 
@@ -31,7 +41,7 @@ export default {
                     <button class="my-btn-buy">acquista</button>
                 </div>
                 <div>
-                    <button class="my-btn-end" >indietro</button>
+                    <button class="my-btn-end" @click="reloadPage" >indietro</button>
                 </div>
             </div>
         </div>
