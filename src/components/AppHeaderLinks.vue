@@ -6,7 +6,7 @@ export default {
     },
     data() {
         return {
-            currentLinks: 0,
+            currentLinks: 1, //partenza da 1 per il link della pagina già aperto già aperta
             links: [
                 {
                     txt: 'characters',
@@ -16,7 +16,7 @@ export default {
                 {
                     txt: 'comics',
                     link: '#nogo',
-                    status: false,
+                    status: true,
                 },
                 {
                     txt: 'movies',
@@ -96,17 +96,14 @@ div{
     height: 100%;
 }
 ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include displayFlex ();
     height: 100%;
 
     li {
         list-style-type: none;
         padding: 10px;
         height: 100%;
-        display: flex;
-        align-items: center;
+        @include displayFlex (flex-start);
 
         &.active,
         &:hover {

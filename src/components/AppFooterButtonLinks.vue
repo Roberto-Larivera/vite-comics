@@ -51,9 +51,7 @@ export default {
 
 
     ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include displayFlex (space-around);
         height: 100%;
         width: 100%;
 
@@ -61,8 +59,7 @@ export default {
             list-style-type: none;
             padding: 10px;
             height: 100%;
-            display: flex;
-            align-items: center;
+            @include displayFlex (flex-start);
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.1);

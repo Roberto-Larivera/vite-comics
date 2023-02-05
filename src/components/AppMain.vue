@@ -13,9 +13,9 @@ export default {
 
 <template>
     <main>
-        <AppMainJumbotron/>
-        <AppMainCurrentSeries/>
-        
+        <AppMainJumbotron />
+        <AppMainCurrentSeries />
+
         <!-- <div class="main_content">
             <div class="container">
                 <div class="content_title">
@@ -43,13 +43,11 @@ main {
     .content_title {
         height: 100%;
         width: 100%;
-        display: flex;
-        align-items: center;
+        @include displayFlex (flex-start);
 
         h2 {
             color: white;
         }
     }
 }
-
 </style>

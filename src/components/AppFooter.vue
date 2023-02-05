@@ -115,22 +115,9 @@ footer {
         .bottom_content {
             height: 100%;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include displayFlex ();
 
             .bottom_content-start {
-                // button {
-                //     padding: 10px;
-                //     text-transform: uppercase;
-                //     background-color: transparent;
-                //     border: 2px solid $color_primary;
-                //     color: $bttn_light-primary;
-
-                //     &:hover {
-                //         background-color: $color_primary;
-                //     }
-                // }
                 button{
                     @include button ($color_primary,$bttn_light-primary,$color_primary,$color_primary)
                 }
@@ -138,9 +125,7 @@ footer {
 
             .bottom_content-end {
                 ul {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
+                    @include displayFlex (space-around);
                     height: 100%;
                     width: 100%;
 
@@ -148,8 +133,7 @@ footer {
                         list-style-type: none;
                         padding: 10px;
                         height: 100%;
-                        display: flex;
-                        align-items: center;
+                        @include displayFlex (flex-start);
 
 
                         span {

@@ -6,8 +6,7 @@ export default {
     },
     props: {
         src: String,
-        title: String,
-        src: String,
+        title: String
 
     },
 }

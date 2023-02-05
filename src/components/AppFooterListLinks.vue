@@ -198,8 +198,7 @@ export default {
                     list-style-type: none;
                     height: 100%;
                     margin-bottom: 5px;
-                    display: flex;
-                    align-items: center;
+                    @include displayFlex (flex-start);
 
                     a {
                         text-decoration: none;

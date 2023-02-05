@@ -1,13 +1,17 @@
 <script>
 import AppMainCurrentCard from './AppMainCurrentCard.vue';
+import AppMainCardInfo from './AppMainCardInfo.vue';
 export default {
     name: 'AppMainCurrentSeries',
     components: {
         AppMainCurrentCard,
+        AppMainCardInfo,
     },
     data() {
         return {
-            seriesData : [
+            currentBook: 0,
+            visibleInfo: false,
+            seriesData: [
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     "price": "$19.99",
@@ -82,20 +86,32 @@ export default {
                 }
             ]
         }
-    }
+    },
+    methods: {
+        open
+    },
 }
 </script>
 
 <template>
     <div class="main_current__series">
-        <div class="container">
-            <div class="title-section">
-                <h2>current series</h2>
+        <div v-if="visibleInfo == false">
+            <div class="container">
+                <div class="title-section">
+                    <h2>current series</h2>
+                </div>
+                <div class="series_cards">
+                    <AppMainCurrentCard :src="element.thumb" :title="element.series" v-for="element in seriesData" @click="" />
+                </div>
+                <button>load more</button>
             </div>
-            <div class="series_cards">
-                <AppMainCurrentCard :src="element.thumb" :title="element.series"  v-for="element in seriesData"/>
+        </div>
+        <div v-if="visibleInfo == true">
+            <div class="conta©iner">
+                <AppMainCardInfo :src="seriesData[currentBook].thumb" :title="seriesData[currentBook].series"
+                    :price="seriesData[currentBook].price" :type="seriesData[currentBook].type" />
             </div>
-            <button>load more</button>
+
         </div>
     </div>
 </template>
@@ -106,34 +122,38 @@ export default {
     background-color: $bg_main-current--series;
     padding: 50px 0 50px 0;
     text-align: center;
-    
-    .container{
+
+    .container {
         position: relative;
-        .title-section{
+
+        .title-section {
             display: inline-block;
             background-color: $color_primary;
             padding: 15px;
             position: absolute;
             top: -80px;
             left: 0;
-            h2{
+
+            h2 {
                 text-transform: uppercase;
                 color: $txt_light-primary;
                 font-weight: 900;
             }
         }
     }
+
     .series_cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 100%;
         margin-bottom: 20px;
-        
-       
+
+
     }
-    button{
-        @include button ($color_primary,$bttn_light-primary,$bg_main-current--series,$color_primary,10px 50px 10px 50px,uppercase,700,$color_primary)
+
+    button {
+        @include button ($color_primary, $bttn_light-primary, $bg_main-current--series, $color_primary, 10px 50px 10px 50px, uppercase, 700, $color_primary)
     }
 }
 </style>
